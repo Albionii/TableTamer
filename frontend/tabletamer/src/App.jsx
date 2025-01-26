@@ -13,8 +13,8 @@ function App() {
 
   return (
     <>
-    {/* {loggedIn ? <Restaurant/> : <Login/>} */}
-    <Menu/>
+    {loggedIn ? <Restaurant/> : <Login/>}
+    {/* <Menu/> */}
     </>
   )
 }
