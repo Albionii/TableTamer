@@ -1,11 +1,10 @@
 ﻿namespace TableTamer.Models
 {
-    public class Waiter
+    public class User
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Wage { get; set; }
-
-        public List<Order>? Orders { get; set; }
+        public string PasswordHash { get; set; }
+        public string Role { get; set; } 
     }
 }

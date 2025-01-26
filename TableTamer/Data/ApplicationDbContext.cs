@@ -9,10 +9,10 @@ namespace TableTamer.Data
             : base(options)
         {
         }
-
+        public DbSet<Fatura> Tables { get; set; }
+        public DbSet<Fatura> Orders { get; set; }
         public DbSet<Food> Foods { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderFood> OrderFoods { get; set; }
-        public DbSet<Waiter> Waiters { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<TableTamer.Models.Table> Table { get; set; } = default!;
     }
 }

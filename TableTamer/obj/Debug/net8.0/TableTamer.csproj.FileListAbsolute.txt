@@ -296,3 +296,5 @@ C:\Users\Admin\Desktop\File-at gjatë programimit\VS\TableTamer\TableTamer\bin\D
 C:\Users\Admin\Desktop\File-at gjatë programimit\VS\TableTamer\TableTamer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Admin\Desktop\File-at gjatë programimit\VS\TableTamer\TableTamer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Admin\Desktop\File-at gjatë programimit\VS\TableTamer\TableTamer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Admin\Desktop\File-at gjatë programimit\VS\TableTamer\TableTamer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\File-at gjatë programimit\VS\TableTamer\TableTamer\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll

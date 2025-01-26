@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TableTamer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d32442979b18d3dfe33a358687eaf00a3d9b85d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc865974824fbffcbbb63a8a8d44bc4ffb310fd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TableTamer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TableTamer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

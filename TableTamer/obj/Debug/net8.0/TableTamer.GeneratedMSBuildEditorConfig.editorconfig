@@ -32,6 +32,26 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Fatura/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Fatura/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Fatura/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Fatura/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Fatura/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Food/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,6 +94,46 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Table/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Table/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Table/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Table/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Table/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/File-at gjatë programimit/VS/TableTamer/TableTamer/Views/_ViewImports.cshtml]
