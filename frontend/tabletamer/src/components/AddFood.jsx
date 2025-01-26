@@ -11,7 +11,7 @@ function AddFood({ ushqimet,idToAdd,addFoodToKarrika,display,setDisplay}) {
         }}>
             {
                 ushqimet.map((ushqimet,index) =>(
-                    <div className="w-32 h-32 bg-[#152d36] flex flex-col items-center rounded-xl" key={index} onClick={(e) => {e.stopPropagation(); addFoodToKarrika(idToAdd,ushqimet); setDisplay(false);}}>
+                    <div className="w-32 h-32 bg-[#152d36] flex flex-col items-center rounded-xl" key={index} onClick={(e) => {e.stopPropagation(); addFoodToKarrika(idToAdd,index); setDisplay(false);}}>
                         <img src={ushqimet.fotoPath} alt=""  className="w-[80%] h-[80%] object-contain"/>
                         <p className="manrope text-white">{ushqimet.emri}</p>
                     </div>

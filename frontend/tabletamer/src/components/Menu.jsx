@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
 import burger from "../assets/images/burger.png";
 import AddFood from "./AddFood";
+import { useParams } from "react-router-dom";
+import Invoice from "./Invoice";
 
 function Menu() {
+  // GET String te ushqimeve by This ID
+  const { id } = useParams();
+  //karrika ko mu bo get tek backend edhe e konverton ne String
   const [tavolina, setTavolina] = useState({});
   const [addId, setAddId] = useState(0);
   const [addFood, setAddFood] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(false);
+  const [showInvoice, setShowInvoice] = useState(false);
   // const [count, setCount] = useState(0);
   const addFoodToKarrika = (idKarrika, foodId) => {
     console.log(idKarrika + " " + JSON.stringify(foodId));
@@ -16,23 +23,13 @@ function Menu() {
         : [foodId],
     }));
   };
+
+  // tek ushqimet ko me kan GET ALL USHQIMET
   const [ushqimet, setUshqimet] = useState([
     { emri: "Hamburger", cmimi: 5.0, fotoPath: burger },
     { emri: "AlbiJava", cmimi: 4.0, fotoPath: burger },
     { emri: "MediAlbi", cmimi: 50.0, fotoPath: burger },
   ]);
-  // useEffect(() => {
-  //   if (count == 0) {
-  //     addFoodToKarrika(0, ushqimet[0]);
-  //     addFoodToKarrika(0, ushqimet[0]);
-  //     addFoodToKarrika(1, ushqimet[1]);
-  //     addFoodToKarrika(2, ushqimet[2]);
-  //     addFoodToKarrika(2, ushqimet[1]);
-  //     console.log(tavolina);
-
-  //     setCount(1);
-  //   }
-  // }, []);
 
   const handleDeleteItem = (indexTavolina, indexUshqimi) => {
     setTavolina((prevTavolina) => {
@@ -62,37 +59,63 @@ function Menu() {
   const handleAddFood = (index) => {
     setAddFood(true);
     setAddId(index);
-  }
+  };
+
+  const handleUpload = () => {
+    setIsSubmit(true);
+    console.log(JSON.stringify(tavolina));
+  };
+
+  useEffect(() => {
+    setIsSubmit(false);
+  }, [tavolina]);
+
+  const handleDeleteTavolina = () => {
+    setTavolina({});
+  };
+  const handleInvoice = () => {
+    //kodi me ja ba status 1
+    setShowInvoice(true);
+  };
   return (
     <>
-      <AddFood ushqimet={ushqimet} idToAdd={addId} addFoodToKarrika={addFoodToKarrika} display={addFood} setDisplay={setAddFood}/>
+      <AddFood
+        ushqimet={ushqimet}
+        idToAdd={addId}
+        addFoodToKarrika={addFoodToKarrika}
+        display={addFood}
+        setDisplay={setAddFood}
+      />
+      {showInvoice && <Invoice invoice={tavolina} ushqimet={ushqimet} display={setShowInvoice}/>}
 
       <div className="container mx-auto h-[900px] flex justify-center items-center">
         <div className="w-[80%] h-[80%] bg-[#02565c] border-[1px] rounded-4xl flex">
           <div className="w-[75%] h-full overflow-y-scroll  rounded-bl-4xl  rounded-tl-4xl flex flex-col ">
-
             {Object.entries(tavolina).map(([idKarrika, foodItems]) => (
               <div key={idKarrika} className="h-fit w-full   flex py-2">
                 <div className=" w-full h-fit  border-b-[1px] flex">
                   <div className="w-[90%] h-full flex justify-center flex-col">
                     {foodItems.map((food, index) => (
-                      <div key={index} className=" w-full h-full flex justify-between items-center">
+                      <div
+                        key={index}
+                        className=" w-full h-full flex justify-between items-center"
+                      >
                         <div className="w-[15%] h-full">
                           {" "}
                           <img
-                            src={food.fotoPath}
+                            src={ushqimet[food].fotoPath}
                             className="h-full w-full object-contain"
                             alt=""
                           />
                         </div>
                         <div className="h-full w-[40%] flex justify-center items-center">
                           <p className="manrope font-semibold text-white">
-                            {food.emri}
+                            {ushqimet[food].emri}
                           </p>
                         </div>
                         <div className="w-[25%] h-full flex justify-center items-center text-white manrope">
                           <p className="manrope text-white text-center">
-                            €{food.cmimi}
+                            €{ushqimet[food].cmimi}
                           </p>
                         </div>
                         <div className="w-[20%] h-full flex justify-center items-center">
@@ -109,7 +132,12 @@ function Menu() {
                   </div>
                   <div className="w-[10%]  flex justify-center items-center">
                     {" "}
-                    <p className="manrope text-white font-semibold" onClick={() => handleAddFood(idKarrika)}>ADD</p>{" "}
+                    <p
+                      className="manrope text-white font-semibold"
+                      onClick={() => handleAddFood(idKarrika)}
+                    >
+                      ADD
+                    </p>{" "}
                   </div>
                 </div>
               </div>
@@ -123,15 +151,34 @@ function Menu() {
           </div>
           <div className="w-[25%] h-full bg-[#152d36]  rounded-br-4xl rounded-tr-4xl flex flex-col justify-between border-l-[2px] border-[#000000] pl-2">
             <p className="manrope font-bold text-[32px] text-center text-[#D8D8D8]">
-              Table #12
+              Table #{id}
             </p>
-            <button className="w-[80%] mx-auto h-fit manrope mb-5 py-2 rounded-xl bg-[#078174] text-[#D8D8D8]">
-              SUBMIT
-            </button>
+            {!isSubmit ? (
+              <button
+                className="w-[80%] mx-auto h-fit manrope mb-5 py-2 rounded-xl bg-[#078174] text-[#D8D8D8]"
+                onClick={handleUpload}
+              >
+                SUBMIT
+              </button>
+            ) : (
+              <div className="w-[80%] mx-auto flex justify-between rounded-xl  text-[#D8D8D8]">
+                <button
+                  className="w-[40%] mx-auto h-fit manrope mb-5 py-2 rounded-xl bg-[#078174] text-[#D8D8D8]"
+                  onClick={handleInvoice}
+                >
+                  Fakturo
+                </button>
+                <button
+                  className="w-[40%] mx-auto h-fit manrope mb-5 py-2 rounded-xl bg-[#078174] text-[#D8D8D8]"
+                  onClick={handleDeleteTavolina}
+                >
+                  Delete
+                </button>{" "}
+              </div>
+            )}
           </div>
         </div>
       </div>
-      
     </>
   );
 }

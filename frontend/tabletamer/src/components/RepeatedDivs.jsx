@@ -1,13 +1,40 @@
 import React, { useEffect, useRef, useState } from "react";
 import Table from "../assets/table.svg?url";
+import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 const RepeatedDivs = ({ createTable }) => {
   const containerRef = useRef(null);
+
+  // Get all tavolina and set their values to true
+
   const [booleanArray, setBooleanArray] = useState(Array(96).fill(false));
+
+  const setBooleanToTrue = (index) => {
+    const newArray = [...booleanArray];
+
+    newArray[index] = true;
+
+    setBooleanArray(newArray);
+  };
+
+  const setMultipleBooleansToTrue = (indices) => {
+    const newArray = [...booleanArray];
+    indices.forEach((index) => {
+      newArray[index] = true;
+    });
+    setBooleanArray(newArray);
+  };
+
+  // qetu i merr krejt karrikat ku posita != null
+  useEffect(() => {
+    setMultipleBooleansToTrue([0, 5, 8, 12, 64, 52]);
+  }, []);
 
   const handleTableCreation = (index) => {
     if (createTable) {
       setBooleanArray(
+        // edhe ktu e shton ni POST request ku ja bon vleren e posites prej null ne qka tdush
         booleanArray.map((_, i) => {
           if (i === index) {
             return true;
@@ -30,7 +57,13 @@ const RepeatedDivs = ({ createTable }) => {
           onClick={() => handleTableCreation(index)}
         >
           {booleanArray[index] ? (
-            <img src={Table} alt="" className="h-full w-full object-contain" /> 
+            <Link to={`/menu/${index}`}>
+              <img
+                src={Table}
+                alt=""
+                className="h-full w-full object-contain"
+              />
+            </Link>
           ) : (
             <div />
           )}
