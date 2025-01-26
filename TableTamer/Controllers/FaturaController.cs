@@ -1,16 +1,16 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using TableTamer.Data;
 using TableTamer.Models;
 
 namespace TableTamer.Controllers
 {
-    public class FaturaController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class FaturaController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
@@ -19,139 +19,110 @@ namespace TableTamer.Controllers
             _context = context;
         }
 
-        // GET: Fatura
-        public async Task<IActionResult> Index()
+        // GET: api/Fatura
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Fatura>>> GetFaturas()
         {
-            return View(await _context.Tables.ToListAsync());
+            return await _context.Fatura.ToListAsync();
         }
 
-        // GET: Fatura/Details/5
-        public async Task<IActionResult> Details(int? id)
+        // GET: api/Fatura/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Fatura>> GetFatura(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var fatura = await _context.Fatura.FindAsync(id);
 
-            var fatura = await _context.Tables
-                .FirstOrDefaultAsync(m => m.Id == id);
             if (fatura == null)
             {
                 return NotFound();
             }
 
-            return View(fatura);
+            return fatura;
         }
 
-        // GET: Fatura/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Fatura/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: api/Fatura
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserId,OrderDateTime,FinishDateTime,Status")] Fatura fatura)
+        public async Task<ActionResult<Fatura>> PostFatura(Fatura fatura)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(fatura);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(fatura);
+            _context.Fatura.Add(fatura);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetFatura), new { id = fatura.Id }, fatura);
         }
 
-        // GET: Fatura/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var fatura = await _context.Tables.FindAsync(id);
-            if (fatura == null)
-            {
-                return NotFound();
-            }
-            return View(fatura);
-        }
-
-        // POST: Fatura/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserId,OrderDateTime,FinishDateTime,Status")] Fatura fatura)
+        // PUT: api/Fatura/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutFatura(int id, Fatura fatura)
         {
             if (id != fatura.Id)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(fatura).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(fatura);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FaturaExists(fatura.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            return View(fatura);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!FaturaExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: Fatura/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // DELETE: api/Fatura/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteFatura(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var fatura = await _context.Tables
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var fatura = await _context.Tables.FindAsync(id);
             if (fatura == null)
             {
                 return NotFound();
             }
 
-            return View(fatura);
-        }
-
-        // POST: Fatura/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var fatura = await _context.Tables.FindAsync(id);
-            if (fatura != null)
-            {
-                _context.Tables.Remove(fatura);
-            }
-
+            _context.Tables.Remove(fatura);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return NoContent();
         }
 
         private bool FaturaExists(int id)
         {
             return _context.Tables.Any(e => e.Id == id);
         }
+
+        [HttpGet("getFaturaByTavolina/{id}")]
+        public async Task<IActionResult> GetFaturaByTableID(int id)
+        {
+            if (id < 0)
+            {
+            return BadRequest("Invalid Table id");
+            }
+
+            var fatura = _context.Fatura.Where(f => (f.Table.Id == id && f.Status == true)).FirstOrDefaultAsync();
+            if (fatura == null)
+            {
+                Fatura f = new Fatura();
+                f.Status = true;
+                f.FinishDateTime = DateTime.Now;
+                f.OrderDateTime = DateTime.Now;
+                return Ok(f);
+            }
+
+            return Ok(fatura);
+        }
+
+
+
     }
 }

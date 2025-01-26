@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TableTamer.Data;
 using TableTamer.Models;
 
 namespace TableTamer.Controllers
 {
-    public class FoodController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class FoodController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
@@ -19,134 +20,81 @@ namespace TableTamer.Controllers
             _context = context;
         }
 
-        // GET: Food
-        public async Task<IActionResult> Index()
+        // GET: api/Food
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Food>>> GetFoods()
         {
-            return View(await _context.Foods.ToListAsync());
+            return await _context.Foods.ToListAsync();
         }
 
-        // GET: Food/Details/5
-        public async Task<IActionResult> Details(int? id)
+        // GET: api/Food/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Food>> GetFood(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var food = await _context.Foods
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (food == null)
-            {
-                return NotFound();
-            }
-
-            return View(food);
-        }
-
-        // GET: Food/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Food/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,PhotoPath")] Food food)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(food);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(food);
-        }
-
-        // GET: Food/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var food = await _context.Foods.FindAsync(id);
+
             if (food == null)
             {
                 return NotFound();
             }
-            return View(food);
+
+            return food;
         }
 
-        // POST: Food/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: api/Food
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,PhotoPath")] Food food)
+        public async Task<ActionResult<Food>> CreateFood(Food food)
+        {
+            _context.Foods.Add(food);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetFood), new { id = food.Id }, food);
+        }
+
+        // PUT: api/Food/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateFood(int id, Food food)
         {
             if (id != food.Id)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(food).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(food);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FoodExists(food.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            return View(food);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!FoodExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: Food/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // DELETE: api/Food/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteFood(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var food = await _context.Foods
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var food = await _context.Foods.FindAsync(id);
             if (food == null)
             {
                 return NotFound();
             }
 
-            return View(food);
-        }
-
-        // POST: Food/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var food = await _context.Foods.FindAsync(id);
-            if (food != null)
-            {
-                _context.Foods.Remove(food);
-            }
-
+            _context.Foods.Remove(food);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return NoContent();
         }
 
         private bool FoodExists(int id)

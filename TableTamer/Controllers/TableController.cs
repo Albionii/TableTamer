@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TableTamer.Data;
 using TableTamer.Models;
 
 namespace TableTamer.Controllers
 {
-    public class TableController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TableController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
@@ -19,139 +19,94 @@ namespace TableTamer.Controllers
             _context = context;
         }
 
-        // GET: Table
-        public async Task<IActionResult> Index()
+        // GET: api/Table
+        [HttpGet]
+        public async Task<IActionResult> GetTables()
         {
-            return View(await _context.Table.ToListAsync());
+            var tables = await _context.Table.ToListAsync();
+            return Ok(tables); // Return tables as JSON
         }
 
-        // GET: Table/Details/5
-        public async Task<IActionResult> Details(int? id)
+        // GET: api/Table/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTable(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var table = await _context.Table
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (table == null)
-            {
-                return NotFound();
-            }
-
-            return View(table);
-        }
-
-        // GET: Table/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Table/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Status,Position")] Table table)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(table);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(table);
-        }
-
-        // GET: Table/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var table = await _context.Table.FindAsync(id);
+
             if (table == null)
             {
-                return NotFound();
+                return NotFound(); // Return 404 if not found
             }
-            return View(table);
+
+            return Ok(table); // Return the table as JSON
         }
 
-        // POST: Table/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: api/Table
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Status,Position")] Table table)
+        public async Task<IActionResult> CreateTable([FromBody] Table table)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState); // Return validation errors
+            }
+
+            _context.Add(table);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetTable), new { id = table.Id }, table); // Return the created table with 201 status
+        }
+
+        // PUT: api/Table/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateTable(int id, [FromBody] Table table)
         {
             if (id != table.Id)
             {
-                return NotFound();
+                return BadRequest("ID mismatch"); // Return 400 if IDs don't match
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(table);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TableExists(table.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                return BadRequest(ModelState); // Return validation errors
             }
-            return View(table);
+
+            try
+            {
+                _context.Update(table);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!TableExists(id))
+                {
+                    return NotFound(); // Return 404 if table doesn't exist
+                }
+                throw;
+            }
+
+            return NoContent(); // Return 204 for successful update with no content
         }
 
-        // GET: Table/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var table = await _context.Table
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (table == null)
-            {
-                return NotFound();
-            }
-
-            return View(table);
-        }
-
-        // POST: Table/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        // DELETE: api/Table/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTable(int id)
         {
             var table = await _context.Table.FindAsync(id);
-            if (table != null)
+            if (table == null)
             {
-                _context.Table.Remove(table);
+                return NotFound(); // Return 404 if table not found
             }
 
+            _context.Table.Remove(table);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return NoContent(); // Return 204 for successful delete
         }
 
         private bool TableExists(int id)
         {
             return _context.Table.Any(e => e.Id == id);
         }
+
+
     }
 }
