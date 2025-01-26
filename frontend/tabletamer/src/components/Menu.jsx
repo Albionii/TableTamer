@@ -25,6 +25,18 @@ function Menu() {
   };
 
   // tek ushqimet ko me kan GET ALL USHQIMET
+  const handleRequest = async () => {
+    try {
+      const response = await fetch("https://localhost:7176/api/food");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log("Fetched Data:", data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
   const [ushqimet, setUshqimet] = useState([
     { emri: "Hamburger", cmimi: 5.0, fotoPath: burger },
     { emri: "AlbiJava", cmimi: 4.0, fotoPath: burger },
@@ -156,7 +168,7 @@ function Menu() {
             {!isSubmit ? (
               <button
                 className="w-[80%] mx-auto h-fit manrope mb-5 py-2 rounded-xl bg-[#078174] text-[#D8D8D8]"
-                onClick={handleUpload}
+                onClick={handleRequest}
               >
                 SUBMIT
               </button>
