@@ -3,60 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\food\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\food\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\food\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\food\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\food\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\food\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\controllers\\faturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:controllers\\faturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Migrations\\20250126135700_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250126135700_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\models\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:models\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\models\\fatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:models\\fatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\home\\food.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\home\\food.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|c:\\users\\admin\\desktop\\file-at gjat\u00EB programimit\\vs\\tabletamer\\tabletamer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037BE93F-B3B2-423F-9924-8389F1720038}|TableTamer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,180 +66,185 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Food\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Food\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Food\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Food\\Delete.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T18:22:59.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Food\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Food\\Create.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Food\\Create.cshtml",
               "RelativeToolTip": "Views\\Food\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T18:02:25.326Z",
+              "WhenOpened": "2025-01-26T14:33:18.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Food\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Food\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Food\\Index.cshtml",
-              "RelativeToolTip": "Views\\Food\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T17:54:29.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FoodController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\FoodController.cs",
               "RelativeDocumentMoniker": "Controllers\\FoodController.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\FoodController.cs",
               "RelativeToolTip": "Controllers\\FoodController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCUAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T17:53:03.239Z",
+              "WhenOpened": "2025-01-26T14:33:09.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:30:16.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TableController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\TableController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TableController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\TableController.cs",
+              "RelativeToolTip": "Controllers\\TableController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:26:48.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T18:00:25.768Z"
+              "WhenOpened": "2025-01-26T14:23:22.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T14:23:15.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FaturaController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\FaturaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FaturaController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Controllers\\FaturaController.cs",
+              "RelativeToolTip": "Controllers\\FaturaController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T17:45:13.682Z",
+              "WhenOpened": "2025-01-26T14:20:37.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250126135700_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Migrations\\20250126135700_Initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250126135700_Initial.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Migrations\\20250126135700_Initial.cs",
+              "RelativeToolTip": "Migrations\\20250126135700_Initial.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T17:57:11.987Z"
+              "WhenOpened": "2025-01-26T13:57:00.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Food.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Food.cs",
-              "RelativeDocumentMoniker": "Models\\Food.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Food.cs",
-              "RelativeToolTip": "Models\\Food.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T17:46:35.707Z"
+              "WhenOpened": "2025-01-26T12:57:58.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
+              "DocumentIndex": 9,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Table.cs",
+              "RelativeDocumentMoniker": "Models\\Table.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Table.cs",
+              "RelativeToolTip": "Models\\Table.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T09:50:01.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T09:30:54.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Fatura.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Fatura.cs",
+              "RelativeDocumentMoniker": "Models\\Fatura.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Fatura.cs",
+              "RelativeToolTip": "Models\\Fatura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T09:58:39.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T17:46:26.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-25T12:11:31.231Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Food.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Home\\Food.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Food.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Home\\Food.cshtml",
-              "RelativeToolTip": "Views\\Home\\Food.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T14:09:06.431Z"
+              "Title": "Food.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Food.cs",
+              "RelativeDocumentMoniker": "Models\\Food.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Models\\Food.cs",
+              "RelativeToolTip": "Models\\Food.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T17:46:35.707Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T20:29:15.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T20:22:34.996Z"
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\File-at gjat\u00EB programimit\\VS\\TableTamer\\TableTamer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T17:57:11.987Z"
             }
           ]
         }
