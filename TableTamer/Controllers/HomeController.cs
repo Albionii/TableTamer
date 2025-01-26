@@ -18,6 +18,13 @@ namespace TableTamer.Controllers
             return View();
         }
 
+        public IActionResult Food()
+        {
+            return View();  
+        }
+
+
+
         public IActionResult Privacy()
         {
             return View();
@@ -28,5 +35,9 @@ namespace TableTamer.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
+
     }
 }
