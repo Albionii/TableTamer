@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+body{
+  background-color: #152D36;
+}
+.manrope {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+input {
+  caret-color: transparent; /* Hides the blinking text cursor */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, 1fr); /* 3 rows */
+  gap: 10px; /* Space between grid items */
+}
+.inputParent > div {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 1rem;
+}
+.gridBox {
+  display: grid;
+  grid-template-rows: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+  grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+}
