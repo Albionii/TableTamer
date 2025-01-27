@@ -24,6 +24,39 @@ function Menu() {
     }));
   };
 
+  useEffect(() => {
+    const fetchTables = async () => {
+      try {
+        const response = await fetch("https://localhost:7176/api/Table/" + id); 
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`); 
+        }
+        const data = await response.json();
+        getUshqimi(data.id); 
+      } catch (err) {
+        console.log("ERROR"); 
+      }
+    };
+
+    fetchTables();
+  }, []);
+
+  const getUshqimi = async (id) => {
+    try {
+      const response = await fetch(
+        `https://localhost:7176/api/Fatura/getFaturaByTavolina/${id}`
+      ); 
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`); 
+      }
+      const data = await response.json();
+      console.log(data.ushqimi);
+    } catch (error) {
+      console.error("Error fetching data:", error); 
+      return null;
+    }
+  };
+
   // tek ushqimet ko me kan GET ALL USHQIMET
   const handleRequest = async () => {
     try {
@@ -36,7 +69,7 @@ function Menu() {
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-  }
+  };
   const [ushqimet, setUshqimet] = useState([
     { emri: "Hamburger", cmimi: 5.0, fotoPath: burger },
     { emri: "AlbiJava", cmimi: 4.0, fotoPath: burger },
@@ -98,7 +131,13 @@ function Menu() {
         display={addFood}
         setDisplay={setAddFood}
       />
-      {showInvoice && <Invoice invoice={tavolina} ushqimet={ushqimet} display={setShowInvoice}/>}
+      {showInvoice && (
+        <Invoice
+          invoice={tavolina}
+          ushqimet={ushqimet}
+          display={setShowInvoice}
+        />
+      )}
 
       <div className="container mx-auto h-[900px] flex justify-center items-center">
         <div className="w-[80%] h-[80%] bg-[#02565c] border-[1px] rounded-4xl flex">

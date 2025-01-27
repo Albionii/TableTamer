@@ -28,7 +28,21 @@ const RepeatedDivs = ({ createTable }) => {
 
   // qetu i merr krejt karrikat ku posita != null
   useEffect(() => {
-    setMultipleBooleansToTrue([0, 5, 8, 12, 64, 52]);
+    let array = [];
+    fetch("https://localhost:7176/api/Table")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json(); // Parse the response as JSON
+      })
+      .then((tavolinat) => {
+        tavolinat.map((tavolin, index) => {
+          array.push(tavolin.position);
+        });
+    setMultipleBooleansToTrue(array);
+
+      });
   }, []);
 
   const handleTableCreation = (index) => {

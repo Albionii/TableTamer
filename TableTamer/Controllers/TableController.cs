@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -26,20 +27,30 @@ namespace TableTamer.Controllers
             var tables = await _context.Table.ToListAsync();
             return Ok(tables); // Return tables as JSON
         }
-
-        // GET: api/Table/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetTable(int id)
-        {
-            var table = await _context.Table.FindAsync(id);
+        [HttpGet("/getTableById/{id}")]
+        public async Task<IActionResult> getTableByPositionId(int id) {
+            var table = await _context.Tables.FirstOrDefaultAsync(t => t.Position == id);
 
             if (table == null)
             {
-                return NotFound(); // Return 404 if not found
+                return NotFound(new { message = "Table not found with the given position ID." });
+            }
+            return Ok(table);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTable(int id)
+        {
+            var table = await _context.Tables.FirstOrDefaultAsync(t => t.Position == id);
+
+            if (table == null)
+            {
+                return NotFound(); 
             }
 
-            return Ok(table); // Return the table as JSON
+            return Ok(table);
         }
+
+        
 
         // POST: api/Table
         [HttpPost]

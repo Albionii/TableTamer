@@ -446,5 +446,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TableTamer.Controllers.TableController",
+    "Method": "getTableByPositionId",
+    "RelativePath": "getTableById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
