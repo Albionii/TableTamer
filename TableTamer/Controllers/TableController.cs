@@ -102,6 +102,19 @@ namespace TableTamer.Controllers
             return NoContent(); // Return 204 for successful delete
         }
 
+
+        [HttpDelete("DeleteByPosition/{pos}")]
+        private async Task<IActionResult> DeleteTableByPosition(int pos)
+        {
+            var table = await _context.Table.Where(table => table.Position == pos).FirstOrDefaultAsync();
+            if (table == null)
+            {
+                return NotFound("Table Not Found");
+            }
+            _context.Table.Remove(table);
+            await _context.SaveChangesAsync();
+            return Ok(table);
+        }
         private bool TableExists(int id)
         {
             return _context.Table.Any(e => e.Id == id);

@@ -106,21 +106,31 @@ namespace TableTamer.Controllers
         {
             if (id < 0)
             {
-            return BadRequest("Invalid Table id");
+                return BadRequest("Invalid Table id");
             }
 
-            var fatura = _context.Fatura.Where(f => (f.Table.Id == id && f.Status == true)).FirstOrDefaultAsync();
+            // Await the query properly
+            var fatura = await _context.Fatura
+                .AsNoTracking() // Disable EF tracking to avoid unnecessary serialization data
+                .Where(f => f.Table.Id == id && f.Status == true)
+                .FirstOrDefaultAsync();
+
+            // If no record exists, return a default Fatura
             if (fatura == null)
             {
-                Fatura f = new Fatura();
-                f.Status = true;
-                f.FinishDateTime = DateTime.Now;
-                f.OrderDateTime = DateTime.Now;
+                Fatura f = new Fatura
+                {
+                    Status = true,
+                    FinishDateTime = DateTime.Now,
+                    OrderDateTime = DateTime.Now
+                };
                 return Ok(f);
             }
 
+            // Return the found record
             return Ok(fatura);
         }
+
 
 
 
