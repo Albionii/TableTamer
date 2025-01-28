@@ -1,2 +1,3 @@
-/TableTamer/.vs
-/TableTamer/obj
+bin/
+obj/
+out/
